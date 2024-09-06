@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        
+        .side_menu {
+            margin: 5px;
+            color: white;
+            padding: 8px;
+            background-color: rgb(81, 77, 81);
+            font-weight: 500;
+            border: solid grey 0.5px;
+            cursor: pointer;
+        }
+
+        .side_menu:hover {
+            background: black;
+        }
+
+        #selected {
+            background-color: rgb(65, 186, 65);
+        }
+        #selected:hover{
+            background: black;
+        }
+        #div_side{
+            margin: 20px;
+            border-radius: 3px;
+            padding: 10px;
+            background-color: rgba(98, 95, 98, 0.2);
+            border: rgb(180, 179, 179) solid 1px;
+
+        }
+        .side_menu
+        {
+            float:left;
+            margin: 5px;
+            color: white;
+            padding: 8px;
+            border:solid grey 0.5px;
+            background-color: rgb(81, 77, 81);
+            font-weight: 500;
+
+
+        }
+        .side_menu:hover{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 style ="color: rgb(65, 186, 65); font-weight: 900;"> Welcome to Nanum's Homepage 22300665</h1>
+    <p1>
+        Use the menu to select different Stylesheets
+    </p1>
+    <div>
+        <ul>
+            <li class="side_menu">Stylesheet 1</li>
+            <li class="side_menu">Stylesheet 2</li>
+            <li class="side_menu "id ="selected">Stylesheet 3</li>
+            <li class="side_menu">Stylesheet 4</li>
+            <li class="side_menu">No Stylesheet</li>
+        </ul>
+    </div>
+
+    <h1 style ="color: rgb(65, 186, 65); font-weight: 900;">Same Page Different Stylesheets</h1>
+    <p2>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p2>
+    <br/>
+    <a href="http://127.0.0.1:3000/index.html" target="_blank" style = "color: black;"> Stylesheet1,</a>
+    <a href="http://127.0.0.1:3000/index.html" target="_blank" style = "color: black;"> Stylesheet2,</a>
+    <a href="http://127.0.0.1:3000/index.html" target="_blank" style = "color: black;"> Stylesheet3,</a>
+    <a href="http://127.0.0.1:3000/index.html" target="_blank" style = "color: black;"> Stylesheet4</a>
+    <h2 style ="color: rgb(65, 186, 65); font-weight: 900;" style = "color: black;">No styles</h2>
+    <p3>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br/>
+    </p3>
+    <a href="http://127.0.0.1:3000/index.html " target="_blank" style = "color: black;"> No Stylesheet</a>
+
+    <div id = "div_side">
+        <h3 style ="color: rgb(65, 186, 65); font-weight: 900;">
+            Side-Bar
+        </h3>
+        <p>
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br/><br/>
+        </p>
+    </div>
+    <p style ="font-size: 10px; text-align: center;">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </p>
+</body>
+</html>
