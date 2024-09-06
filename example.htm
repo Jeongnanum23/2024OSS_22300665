@@ -7,8 +7,44 @@
     <title>Document</title>
 
     <style>
+
         body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
             margin:0px 15%;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        
+        .side_menu {
+            font-weight: 900;
+            margin: 5px;
+            color: rgb(196, 192, 192);
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .side_menu:hover {
+            color: rgb(196, 192, 192);
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color:rgb(196, 192, 192);
+        }
+
+        #selected {
+           font-weight: 900;
+           color:white;
+           text-decoration: underline;
+           text-decoration-thickness: 3px;
+           text-decoration-color:white ;
+        }
+        #selected:hover{
+            text-decoration-color:rgb(196, 192, 192);
         }
         #place{
             text-align: center;
@@ -16,12 +52,10 @@
         .button{
             background-color: white;
             border:none;
-            margin:20px 240px;
             border-radius: 10px;
             color:rgb(33, 33, 33);
-            padding: 15px ;
+            padding: 15px;
             text-align: center;
-            display: inline-block;
             font-weight: 900;
             font-size: 20px;
             cursor:pointer;
@@ -32,7 +66,7 @@
         }
         .bottom{
             position: absolute;
-            left: 38%;
+            left: 18%;
             bottom:0;
             color: white;
             text-align: center;
@@ -41,7 +75,15 @@
     
 </head>
 <body style =" background-color: rgb(33, 33, 33);">
-    <h2 style ="color: white;">Cover</h2>
+    <p style ="color: white; font-weight:550; font-size: 25px; white-space: nowarp;">Cover</p>
+    <div>
+        <ul>
+            <li class="side_menu "id ="selected"> Home</li>
+            <li class="side_menu">Features</li>
+            <li class="side_menu">Contact </li>
+            
+        </ul>
+    </div>
 
     <br/>
     <br/>
@@ -49,7 +91,7 @@
     <br/>
     <br/>
     <br/>
-    <p style =" font-weight : 900;font-size:32px; text-align: center; color: white;">Cover your page.</p>
+    <p style =" font-weight : 5;font-size:32px; text-align: center; color: white;">Cover your page.</p>
     <p style =" text-align: center; color: white;">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
     <div id = "place">
         <button class ="button">
@@ -58,7 +100,7 @@
     </div>
 
     <div  id ="div_bottom">
-        <P class ="bottom" >Cover template for Bootstrap, by @mdo.</P>
+        <P class ="bottom" >Cover template for <a href="https://getbootstrap.com/" target="_blank" style = "color: white;">Bootstrap</a>, by <a href="https://x.com/mdo" target="_blank" style = "color: white;">@mdo</a>.</P>
     </div>
 </body>
 </html>
